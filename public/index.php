@@ -8,16 +8,17 @@
     print("<h5>Hello!</h5>");
       ?>
   <table border="2">
-    <tr>
-      <?php 
-      for ($a = 1; $a < 101; $a++)
-      {
-        if ($a % 5 == 0)
-        {
-          echo "<td>$a</td>";
+       <?php 
+      for ($i = 0; $i < 4; $i++) {
+        echo "<tr>";
+        for ($a = 1; $a <= 25; $a++) {
+          $number = $i * 25 + $a;
+          if ($number % 5 == 0)
+          echo "<td>$number</td>";
         }
-      }?>
-    </tr>
+        echo "</tr>";
+      }
+      ?>
     </table>
   </body>
 </html>
